@@ -1,0 +1,7 @@
+git clone git@github.com:oblivion/.vim.git
+
+ln -s .vim/vimrc .vimrc
+ln -s .vim/gvimrc .gvimrc
+
+cd .vimrc
+git submodule update --init
