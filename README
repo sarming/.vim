@@ -5,3 +5,5 @@ ln -s .vim/gvimrc .gvimrc
 
 cd .vim
 git submodule update --init
+
+git submodule add <url> bundle/<dir>
