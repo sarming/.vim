@@ -1,6 +1,8 @@
 filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles() 
+call pathogen#runtime_append_all_bundles('vim-latex') 
+" call pathogen#runtime_prepend_subdirectories('vim-latex/vimfiles') 
 filetype plugin indent on
 
 set nocp
