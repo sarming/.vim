@@ -22,3 +22,9 @@
 [submodule "vim-latex"]
 	path = vim-latex
 	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
+[submodule "bundle/wombat"]
+	path = bundle/wombat
+	url = https://github.com/cschlueter/vim-wombat.git
+[submodule "bundle/inkpot"]
+	path = bundle/inkpot
+	url = https://github.com/ciaranm/inkpot.git
