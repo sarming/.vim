@@ -5,6 +5,8 @@ call pathogen#runtime_append_all_bundles('vim-latex')
 " call pathogen#runtime_prepend_subdirectories('vim-latex/vimfiles') 
 filetype plugin indent on
 
+syntax on
+
 set nocp
 set modelines=0
 
@@ -22,7 +24,7 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
-set cursorline
+"set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
@@ -79,6 +81,8 @@ nnoremap <C-l> <C-w>l
 
 
 set grepprg=grep\ -nH\ $*
+
+au BufNewFile,BufRead *.dl set filetype=prolog
 
 " Sven's minimal vimrc - explanation:  www.guckes.net/vim/setup.html
 "set comments=b:#,:%,fb:-,n:>,n:)|set list listchars=tab:.\ ,trail:~
