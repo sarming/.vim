@@ -52,7 +52,7 @@ set formatoptions=qrn1
 "set colorcolumn=85
 
 set list
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:¸\ ,eol:¬
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
