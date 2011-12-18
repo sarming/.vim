@@ -84,6 +84,7 @@ set grepprg=grep\ -nH\ $*
 
 au BufNewFile,BufRead *.dl set filetype=prolog
 
+colorscheme inkpot
 " Sven's minimal vimrc - explanation:  www.guckes.net/vim/setup.html
 "set comments=b:#,:%,fb:-,n:>,n:)|set list listchars=tab:.\ ,trail:~
 "set viminfo=%,'50,\"100,:100,n~/.viminfo
