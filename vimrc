@@ -8,7 +8,7 @@ filetype plugin indent on
 syntax on
 
 set nocp
-set modelines=0
+"set modelines=0
 
 set tabstop=4
 set shiftwidth=4
@@ -62,8 +62,8 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
+"nnoremap j gj
+"nnoremap k gk
 
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
@@ -71,7 +71,7 @@ vnoremap <F1> <ESC>
 
 nnoremap ; :
 
-au FocusLost * :wa
+"au FocusLost * :wa
 
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <C-h> <C-w>h
@@ -80,7 +80,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 
-set grepprg=grep\ -nH\ $*
+"set grepprg=grep\ -nH\ $*
 
 au BufNewFile,BufRead *.dl set filetype=prolog
 
