@@ -82,7 +82,10 @@ nnoremap <C-l> <C-w>l
 
 "set grepprg=grep\ -nH\ $*
 
-au BufNewFile,BufRead *.dl set filetype=prolog
+if has("autocmd")
+    au BufNewFile,BufRead *.dl set filetype=prolog
+    au BufReadPost fugitive://* set bufhidden=delete
+endif
 
 colorscheme inkpot
 " Sven's minimal vimrc - explanation:  www.guckes.net/vim/setup.html
