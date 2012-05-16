@@ -3,7 +3,7 @@
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
+	url = https://github.com/wincent/Command-T.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
@@ -21,7 +21,7 @@
 	url = https://github.com/vim-scripts/YankRing.vim.git
 [submodule "vim-latex"]
 	path = vim-latex
-	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
+	url = https://github.com/oblivion/vim-latex.git
 [submodule "bundle/wombat"]
 	path = bundle/wombat
 	url = https://github.com/cschlueter/vim-wombat.git
@@ -36,7 +36,7 @@
 	url = https://github.com/tomtom/tcomment_vim.git
 [submodule "bundle/solarized"]
 	path = bundle/solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
