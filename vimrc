@@ -1,8 +1,9 @@
-filetype off
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles() 
-call pathogen#runtime_append_all_bundles('vim-latex') 
-" call pathogen#runtime_prepend_subdirectories('vim-latex/vimfiles') 
+"filetype off
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+"call pathogen#runtime_append_all_bundles() 
+"call pathogen#runtime_append_all_bundles('vim-latex') 
+"call pathogen#runtime_prepend_subdirectories('vim-latex/vimfiles') 
 filetype plugin indent on
 
 syntax on
