@@ -1,9 +1,6 @@
 "filetype off
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
-"call pathogen#runtime_append_all_bundles() 
-"call pathogen#runtime_append_all_bundles('vim-latex') 
-"call pathogen#runtime_prepend_subdirectories('vim-latex/vimfiles') 
 filetype plugin indent on
 
 syntax on
@@ -80,7 +77,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-
 "set grepprg=grep\ -nH\ $*
 
 if has("autocmd")
@@ -89,6 +85,9 @@ if has("autocmd")
 endif
 
 colorscheme inkpot
+
+let g:Tex_DefaultTargetFormat = "pdf"
+
 " Sven's minimal vimrc - explanation:  www.guckes.net/vim/setup.html
 "set comments=b:#,:%,fb:-,n:>,n:)|set list listchars=tab:.\ ,trail:~
 "set viminfo=%,'50,\"100,:100,n~/.viminfo
