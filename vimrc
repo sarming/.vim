@@ -27,6 +27,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+set number
 "set relativenumber
 set undofile
 
@@ -76,6 +77,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+"toggle folds with space
+nnoremap <Space> za
+vnoremap <Space> za
 
 "set grepprg=grep\ -nH\ $*
 
