@@ -3,8 +3,6 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 filetype plugin indent on
 
-syntax on
-
 set nocp
 "set modelines=0
 
@@ -13,23 +11,15 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-set encoding=utf-8
-set scrolloff=3
-set autoindent
-set showmode
-set showcmd
+"set scrolloff=3
 set hidden
-set wildmenu
 set wildmode=list:longest
 set visualbell
 "set cursorline
 set ttyfast
-set ruler
-set backspace=indent,eol,start
 set laststatus=2
 set number
 "set relativenumber
-set undofile
 
 let mapleader = ","
 
@@ -38,20 +28,18 @@ vnoremap / /\v
 set ignorecase
 set smartcase
 set gdefault
-set incsearch
-set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
+"nnoremap <tab> %
+"vnoremap <tab> %
 
 set wrap
 set textwidth=79
-set formatoptions=qrn1
+"set formatoptions=qrn1
 "set colorcolumn=85
 
 set list
-set listchars=tab:¸\ ,eol:¬
+"set listchars=tab:¸\ ,eol:¬
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -68,7 +56,7 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-nnoremap ; :
+"nnoremap ; :
 
 "au FocusLost * :wa
 
