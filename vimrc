@@ -75,11 +75,12 @@ vnoremap <Space> za
 if has("autocmd")
     au BufNewFile,BufRead *.dl set filetype=prolog
     au BufReadPost fugitive://* set bufhidden=delete
+
+    au FileType tex compiler tex
+    au FileType tex set makeprg=pdflatex\ \-file\-line\-error\ \-interaction=nonstopmode\ $* errorformat=%f:%l:\ %m formatoptions+=l
 endif
 
 colorscheme inkpot
-
-let g:Tex_DefaultTargetFormat = "pdf"
 
 " Sven's minimal vimrc - explanation:  www.guckes.net/vim/setup.html
 "set comments=b:#,:%,fb:-,n:>,n:)|set list listchars=tab:.\ ,trail:~
