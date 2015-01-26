@@ -22,6 +22,7 @@ set number
 "set relativenumber
 
 let mapleader = ","
+let maplocalleader = ","
 
 nnoremap / /\v
 vnoremap / /\v
@@ -76,9 +77,22 @@ if has("autocmd")
     au BufNewFile,BufRead *.dl set filetype=prolog
     au BufReadPost fugitive://* set bufhidden=delete
 
-    au FileType tex compiler tex
-    au FileType tex set makeprg=pdflatex\ \-file\-line\-error\ \-interaction=nonstopmode\ $* errorformat=%f:%l:\ %m formatoptions+=l
+"    au FileType tex compiler tex
+"    au FileType tex set makeprg=pdflatex\ \-file\-line\-error\ \-interaction=nonstopmode\ $* errorformat=%f:%l:\ %m formatoptions+=l
+
 endif
+
+if has("gui_macvim")
+    map <silent> <Leader>ls :silent
+        \ !/Applications/Skim.app/Contents/SharedSupport/displayline
+        \ <C-R>=line('.')<CR> "<C-R>=LatexBox_GetOutputFile()<CR>"
+        \ "%:p" <CR>
+endif
+
+let g:LatexBox_Folding=1
+" let g:LatexBox_latexmk_async=1
+let g:LatexBox_latexmk_preview_continuously=1
+let g:LatexBox_quickfix=2
 
 colorscheme inkpot
 
