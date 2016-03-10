@@ -73,6 +73,8 @@ vnoremap <Space> za
 
 "set grepprg=grep\ -nH\ $*
 
+nmap <F8> :TagbarToggle<CR>
+
 if has("autocmd")
     au BufNewFile,BufRead *.dl set filetype=prolog
     au BufReadPost fugitive://* set bufhidden=delete
