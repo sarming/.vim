@@ -96,7 +96,7 @@ let g:LatexBox_Folding=1
 let g:LatexBox_latexmk_preview_continuously=1
 let g:LatexBox_quickfix=2
 
-colorscheme inkpot
+colorscheme molokai
 
 " Sven's minimal vimrc - explanation:  www.guckes.net/vim/setup.html
 "set comments=b:#,:%,fb:-,n:>,n:)|set list listchars=tab:.\ ,trail:~
