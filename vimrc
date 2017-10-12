@@ -11,9 +11,11 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+set showcmd
 "set scrolloff=3
 set hidden
 set wildmode=list:longest
+set path+=**
 set visualbell
 "set cursorline
 set ttyfast
@@ -21,18 +23,16 @@ set laststatus=2
 set number
 "set relativenumber
 
-let mapleader = ","
-let maplocalleader = ","
+map <space> <Leader>
 
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
 set smartcase
 set gdefault
+set incsearch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
-"nnoremap <tab> %
-"vnoremap <tab> %
 
 set wrap
 set textwidth=79
@@ -40,7 +40,8 @@ set textwidth=79
 "set colorcolumn=85
 
 set list
-"set listchars=tab:¸\ ,eol:¬
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+set showbreak=↪\ 
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -53,11 +54,10 @@ inoremap <right> <nop>
 "nnoremap j gj
 "nnoremap k gk
 
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
+" inoremap <F1> <ESC>
+" nnoremap <F1> <ESC>
+" vnoremap <F1> <ESC>
 
-"nnoremap ; :
 
 "au FocusLost * :wa
 
@@ -67,36 +67,54 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-"toggle folds with space
-nnoremap <Space> za
-vnoremap <Space> za
-
 "set grepprg=grep\ -nH\ $*
 
 nmap <F8> :TagbarToggle<CR>
 
 if has("autocmd")
     au BufNewFile,BufRead *.dl set filetype=prolog
-    au BufReadPost fugitive://* set bufhidden=delete
+    " au BufReadPost fugitive://* set bufhidden=delete
 
-"    au FileType tex compiler tex
-"    au FileType tex set makeprg=pdflatex\ \-file\-line\-error\ \-interaction=nonstopmode\ $* errorformat=%f:%l:\ %m formatoptions+=l
+   " au FileType tex compiler tex
+   " au FileType tex set makeprg=pdflatex\ \-file\-line\-error\ \-interaction=nonstopmode\ $* errorformat=%f:%l:\ %m formatoptions+=l
 
 endif
 
-if has("gui_macvim")
-    map <silent> <Leader>ls :silent
-        \ !/Applications/Skim.app/Contents/SharedSupport/displayline
-        \ <C-R>=line('.')<CR> "<C-R>=LatexBox_GetOutputFile()<CR>"
-        \ "%:p" <CR>
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  " if has("unnamedplus") " X11 support
+  "   set clipboard+=unnamedplus
+  " endif
 endif
 
-let g:LatexBox_Folding=1
-" let g:LatexBox_latexmk_async=1
-let g:LatexBox_latexmk_preview_continuously=1
-let g:LatexBox_quickfix=2
 
-colorscheme molokai
+" let g:LatexBox_Folding=1
+" let g:LatexBox_quickfix=2
+let g:vimtex_view_method='skim'
+let g:vimtex_quickfix_open_on_warning = 0
+" inoremap <silent> __ __<c-r>=UltiSnips#Anon('_{$1}$0', '__', '', 'i')<cr>
+" inoremap <silent> ^^ ^^<c-r>=UltiSnips#Anon('^{$1}$0', '^^', '', 'i')<cr>
+
+let g:solarized_contrast="high"
+
+if has("gui_running")
+    set guioptions-=T
+
+    set background=light
+
+    let g:airline_theme='one'
+    colorscheme one
+    "colorscheme slate
+
+    " set guifont=Monaco:h13
+    " set guifont=Inconsolata:h14
+    set guifont=Source\ Code\ Pro:h10
+    let g:airline_powerline_fonts = 1
+else
+    colorscheme molokai
+endif
+
 
 " Sven's minimal vimrc - explanation:  www.guckes.net/vim/setup.html
 "set comments=b:#,:%,fb:-,n:>,n:)|set list listchars=tab:.\ ,trail:~
