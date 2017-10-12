@@ -70,9 +70,6 @@
 [submodule "bundle/vim-one"]
 	path = bundle/vim-one
 	url = https://github.com/rakr/vim-one.git
-[submodule "bundle/pyte"]
-	path = bundle/pyte
-	url = https://github.com/vim-scripts/pyte
 [submodule "bundle/vim-bufkill"]
 	path = bundle/vim-bufkill
 	url = https://github.com/qpkorr/vim-bufkill.git
