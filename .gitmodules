@@ -5,13 +5,13 @@
 	path = bundle/inkpot
 	url = https://github.com/ciaranm/inkpot.git
 [submodule "bundle/fugitive"]
-	path = bundle/fugitive
+	path = pack/ian/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/unimpaired"]
-	path = bundle/unimpaired
+	path = pack/ian/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
@@ -20,13 +20,13 @@
 	path = bundle/vim-sensible
 	url = git://github.com/tpope/vim-sensible.git
 [submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
+	path = pack/ian/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/vim-characterize"]
-	path = bundle/vim-characterize
+	path = pack/ian/start/vim-characterize
 	url = https://github.com/tpope/vim-characterize.git
 [submodule "bundle/vim-speeddating"]
-	path = bundle/vim-speeddating
+	path = pack/ian/start/vim-speeddating
 	url = https://github.com/tpope/vim-speeddating.git
 [submodule "bundle/vim-sleuth"]
 	path = bundle/vim-sleuth
@@ -38,10 +38,10 @@
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
 [submodule "bundle/vim-repeat"]
-	path = bundle/vim-repeat
+	path = pack/ian/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
 [submodule "bundle/vim-vinegar"]
-	path = bundle/vim-vinegar
+	path = pack/ian/start/vim-vinegar
 	url = git://github.com/tpope/vim-vinegar.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
@@ -50,13 +50,13 @@
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 [submodule "bundle/molokai"]
-	path = bundle/molokai
+	path = pack/ian/start/molokai
 	url = https://github.com/tomasr/molokai.git
 [submodule "bundle/rust.vim"]
-	path = bundle/rust.vim
+	path = pack/ian/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
 [submodule "bundle/vimtex"]
-	path = bundle/vimtex
+	path = pack/ian/start/vimtex
 	url = https://github.com/lervag/vimtex.git
 [submodule "bundle/ale"]
 	path = bundle/ale
@@ -65,11 +65,11 @@
 	path = bundle/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
 [submodule "bundle/vim-commentary"]
-	path = bundle/vim-commentary
+	path = pack/ian/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
 [submodule "bundle/vim-one"]
-	path = bundle/vim-one
+	path = pack/ian/start/vim-one
 	url = https://github.com/rakr/vim-one.git
 [submodule "bundle/vim-bufkill"]
-	path = bundle/vim-bufkill
+	path = pack/ian/start/vim-bufkill
 	url = https://github.com/qpkorr/vim-bufkill.git

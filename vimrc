@@ -1,6 +1,4 @@
 "filetype off
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
 filetype plugin indent on
 
 set nocp
