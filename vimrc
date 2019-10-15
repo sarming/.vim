@@ -1,38 +1,95 @@
-"filetype off
-filetype plugin indent on
+if has('autocmd')
+  filetype plugin indent on
+endif
+if has('syntax') && !exists('g:syntax_on')
+  syntax enable
+endif
 
-set nocp
-"set modelines=0
+set autoindent
+set backspace=indent,eol,start
+set complete-=i
 
+set smarttab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-set showcmd
-"set scrolloff=3
+set nrformats-=octal
+
+if !has('nvim') && &ttimeoutlen == -1
+  set ttimeout
+  set ttimeoutlen=100
+end
+
+if &synmaxcol == 3000
+  " Lowering this improves performance in files with long lines.
+  set synmaxcol=500
+endif
+
+set ttyfast
+
+if !&scrolloff
+  set scrolloff=1
+endif
+if !&sidescrolloff
+  set sidescrolloff=5
+endif
+set display+=lastline
+
+"hide buffers instead of closing them even if they contain unwritten changes
 set hidden
+
+set showcmd
+set wildmenu
 set wildmode=list:longest
+
 set path+=**
 set visualbell
 "set cursorline
-set ttyfast
+
+"always display the status line
 set laststatus=2
+set ruler
+
 set number
 "set relativenumber
 
 set nofixendofline
 
+set formatoptions+=j " Delete comment character when joining commented lines
+
+if has('path_extra')
+  setglobal tags-=./tags tags-=./tags; tags^=./tags;
+endif
+
+set autoread
+
+set history=1000
+set tabpagemax=50
+
+if !empty(&viminfo)
+  set viminfo^=!
+endif
+set sessionoptions-=options
+set viewoptions-=options
+
+runtime! macros/matchit.vim
+
 map <space> <Leader>
 
 nnoremap / /\v
 vnoremap / /\v
+"searches are case insensitive unless they contain at least one capital letter
 set ignorecase
 set smartcase
 set gdefault
+
 set incsearch
 set hlsearch
-nnoremap <leader><space> :noh<cr>
+" <C-L> normally redraws the screen, so turning off search highlighting is a
+" natural addition
+nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
 
 set wrap
 set textwidth=79
@@ -66,6 +123,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+inoremap <C-U> <C-G>u<C-U>
+inoremap <C-W> <C-G>u<C-W>
 
 "set grepprg=grep\ -nH\ $*
 
@@ -116,13 +176,10 @@ if has("gui_running")
     set guifont=Source\ Code\ Pro:h10
     let g:airline_powerline_fonts = 1
     set backupcopy=yes "https://github.com/macvim-dev/macvim/wiki/FAQ#how-can-i-prevent-finder-file-labels-from-disappearing-when-saving-a-file
+
+    if &encoding ==# 'latin1'
+        set encoding=utf-8
+    endif
 else
     colorscheme molokai
 endif
-
-
-" Sven's minimal vimrc - explanation:  www.guckes.net/vim/setup.html
-"set comments=b:#,:%,fb:-,n:>,n:)|set list listchars=tab:.\ ,trail:~
-"set viminfo=%,'50,\"100,:100,n~/.viminfo
-"set nocp ek hidden  ruler sc vb wmnu noeb noet nosol
-"set bs=2 fo=cqrt ls=2 shm=at tw=72 ww=<,>,h,l  |syn  on
