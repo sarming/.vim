@@ -23,6 +23,8 @@ set laststatus=2
 set number
 "set relativenumber
 
+set nofixendofline
+
 map <space> <Leader>
 
 nnoremap / /\v
@@ -88,6 +90,10 @@ if has("clipboard")
   " endif
 endif
 
+if executable('rg')
+  set grepprg=rg
+              "\ --color=never
+endif
 
 " let g:LatexBox_Folding=1
 " let g:LatexBox_quickfix=2
@@ -111,6 +117,7 @@ if has("gui_running")
     " set guifont=Inconsolata:h14
     set guifont=Source\ Code\ Pro:h10
     let g:airline_powerline_fonts = 1
+    set backupcopy=yes "https://github.com/macvim-dev/macvim/wiki/FAQ#how-can-i-prevent-finder-file-labels-from-disappearing-when-saving-a-file
 else
     colorscheme molokai
 endif
