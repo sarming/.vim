@@ -1,75 +1,72 @@
-[submodule "bundle/wombat"]
-	path = bundle/wombat
-	url = https://github.com/cschlueter/vim-wombat.git
-[submodule "bundle/inkpot"]
-	path = bundle/inkpot
+[submodule "pack/colors/opt/wombat"]
+	path = pack/colors/opt/wombat
+	url = https://github.com/vim-scripts/wombat256.vim.git
+[submodule "pack/colors/opt/inkpot"]
+	path = pack/colors/opt/inkpot
 	url = https://github.com/ciaranm/inkpot.git
-[submodule "bundle/fugitive"]
-	path = pack/ian/start/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/solarized"]
-	path = bundle/solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/unimpaired"]
-	path = pack/ian/start/vim-unimpaired
-	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "bundle/vim-pathogen"]
-	path = bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
-[submodule "bundle/vim-sensible"]
-	path = bundle/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
-[submodule "bundle/vim-surround"]
-	path = pack/ian/start/vim-surround
-	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/vim-characterize"]
-	path = pack/ian/start/vim-characterize
-	url = https://github.com/tpope/vim-characterize.git
-[submodule "bundle/vim-speeddating"]
-	path = pack/ian/start/vim-speeddating
-	url = https://github.com/tpope/vim-speeddating.git
-[submodule "bundle/vim-sleuth"]
-	path = bundle/vim-sleuth
-	url = https://github.com/tpope/vim-sleuth.git
-[submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
-[submodule "bundle/vim-snippets"]
-	path = bundle/vim-snippets
-	url = https://github.com/honza/vim-snippets.git
-[submodule "bundle/vim-repeat"]
-	path = pack/ian/start/vim-repeat
-	url = https://github.com/tpope/vim-repeat.git
-[submodule "bundle/vim-vinegar"]
-	path = pack/ian/start/vim-vinegar
-	url = git://github.com/tpope/vim-vinegar.git
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
-[submodule "bundle/molokai"]
-	path = pack/ian/start/molokai
+[submodule "pack/colors/opt/molokai"]
+	path = pack/colors/opt/molokai
 	url = https://github.com/tomasr/molokai.git
-[submodule "bundle/rust.vim"]
-	path = pack/ian/start/rust.vim
-	url = https://github.com/rust-lang/rust.vim.git
-[submodule "bundle/vimtex"]
-	path = pack/ian/start/vimtex
-	url = https://github.com/lervag/vimtex.git
-[submodule "bundle/ale"]
-	path = bundle/ale
-	url = https://github.com/w0rp/ale.git
-[submodule "bundle/vim-gutentags"]
-	path = bundle/vim-gutentags
-	url = https://github.com/ludovicchabant/vim-gutentags.git
-[submodule "bundle/vim-commentary"]
-	path = pack/ian/start/vim-commentary
-	url = https://github.com/tpope/vim-commentary.git
-[submodule "bundle/vim-one"]
-	path = pack/ian/start/vim-one
+[submodule "pack/colors/opt/vim-one"]
+	path = pack/colors/opt/vim-one
 	url = https://github.com/rakr/vim-one.git
-[submodule "bundle/vim-bufkill"]
+[submodule "pack/colors/opt/solarized"]
+	path = pack/colors/opt/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "pack/tpope/start/unimpaired"]
+	path = pack/tpope/start/unimpaired
+	url = https://tpope.io/vim/unimpaired.git
+[submodule "pack/tpope/start/sensible"]
+	path = pack/tpope/start/sensible
+	url = https://tpope.io/vim/sensible.git
+[submodule "pack/tpope/start/surround"]
+	path = pack/tpope/start/surround
+	url = https://tpope.io/vim/surround.git
+[submodule "pack/tpope/start/commentary"]
+	path = pack/tpope/start/commentary
+	url = https://tpope.io/vim/commentary.git
+[submodule "pack/tpope/start/characterize"]
+	path = pack/tpope/start/characterize
+	url = https://tpope.io/vim/characterize.git
+[submodule "pack/tpope/start/repeat"]
+	path = pack/tpope/start/repeat
+	url = https://tpope.io/vim/repeat.git
+[submodule "pack/tpope/start/sleuth"]
+	path = pack/tpope/start/sleuth
+	url = https://tpope.io/vim/sleuth.git
+[submodule "pack/tpope/start/speeddating"]
+	path = pack/tpope/start/speeddating
+	url = https://tpope.io/vim/speeddating.git
+[submodule "pack/tpope/start/vim-vinegar"]
+	path = pack/tpope/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
+[submodule "pack/ian/start/vim-airline"]
+	path = pack/ian/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/tags/start/tagbar"]
+	path = pack/tags/start/tagbar
+	url = https://github.com/preservim/tagbar.git
+[submodule "pack/tags/start/vim-gutentags"]
+	path = pack/tags/start/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "pack/ian/start/vim-bufkill"]
 	path = pack/ian/start/vim-bufkill
 	url = https://github.com/qpkorr/vim-bufkill.git
+[submodule "pack/ian/start/rust.vim"]
+	path = pack/ian/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
+[submodule "pack/ian/start/vimtex"]
+	path = pack/ian/start/vimtex
+	url = https://github.com/lervag/vimtex.git
+[submodule "pack/ian/start/ale"]
+	path = pack/ian/start/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "pack/snippets/start/vim-snippets"]
+	path = pack/snippets/start/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "pack/snippets/start/ultisnips"]
+	path = pack/snippets/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "pack/tpope/start/fugitive"]
+	path = pack/tpope/start/fugitive
+	url = https://tpope.io/vim/fugitive.git
