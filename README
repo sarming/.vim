@@ -7,3 +7,5 @@ cd .vim
 git submodule update --init
 
 git submodule add <url> pack/ian/start/<dir>
+
+git submodule foreach git pull
