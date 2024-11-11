@@ -165,15 +165,17 @@ let g:solarized_contrast="high"
 if has("gui_running")
     set guioptions-=T
 
-    set background=light
+    set background=dark
 
-    let g:airline_theme='one'
-    colorscheme one
+    let g:airline_theme='solarized'
+    colorscheme solarized
     "colorscheme slate
 
     " set guifont=Monaco:h13
     " set guifont=Inconsolata:h14
-    set guifont=Source\ Code\ Pro:h10
+    " set guifont=Source\ Code\ Pro:h10
+    set guifont=ComicCode-Regular:h11
+
     let g:airline_powerline_fonts = 1
     set backupcopy=yes "https://github.com/macvim-dev/macvim/wiki/FAQ#how-can-i-prevent-finder-file-labels-from-disappearing-when-saving-a-file
 
